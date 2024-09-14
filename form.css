@@ -128,7 +128,7 @@ textarea[name="experienceDescription"] {
         padding: 10px;
     }
 
-    h1, h2 {
+    h2 {
         font-size: 1.5rem;
     }
 
@@ -136,6 +136,12 @@ textarea[name="experienceDescription"] {
         font-size: 1rem;
         padding: 8px 10px;
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width:480){
+    h1 {
+        font-size: 1.5rem;
     }
 }
  /*    Generated resume styles*/
