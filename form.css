@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligned to the top */
+    min-height: 100vh;
+}
+
+/* Form container */
+.resume-info {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #f7f7f7; /* Light gray background for form */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: left;
+}
+
+/* Headings */
+h1 {
+    color: #01245a; /* Dark blue headings */
+    text-align: center;
+    font-size: 3rem; /* Larger heading */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color: #01245a; /* Dark blue headings */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Form labels and inputs */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Center the "Generate Resume" button */
+.resume-btn {
+    background-color: #01245a;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%; /* Full-width button */
+    text-align: center;
+}
+
+.resume-btn:hover {
+    background-color: #516c96;
+}
+
+/* Center the button container */
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Container for dynamic sections */
+#educationContainer, #skillsContainer, #experienceContainer {
+    margin-top: 10px;
+}
+
+.toggle-button {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/* Increase description box size */
+textarea[name="profileDescription"],
+textarea[name="experienceDescription"] {
+    height: 100px; /* Increase the height */
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Minus button styling */
+.remove-btn {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.remove-btn:hover {
+    background-color: #ff0000;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .resume-info {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .resume-btn {
+        font-size: 1rem;
+        padding: 8px 10px;
+        margin-bottom: 30px;
+    }
+}
+ /*    Generated resume styles*/
+
+ .resume-box {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Wider layout */
+    margin: 0 auto;
+}
+
+.left-section {
+    width: 35%; /* Left side is 30% */
+    padding-right: 10px;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+
+.right-section {
+    width: 65%; /* Right side is 70% */
+    padding-left: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 2px solid rgb(48, 48, 53);
+}
+
+.contact {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact p{
+    font-size: 0.8rem;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 18px; /* Smaller font for title */
+    font-style: italic; /* Optional: Italic style for title */
+    color: #333; /* Title color */
+    margin-bottom: 20px; /* Space between title and profile section */
+    text-align: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Move skills to the left section */
+.skills {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.skills ul {
+    list-style-type: disc; /* Use dots for bullet points */
+    padding-left: 20px; /* Indent the bullet points */
+    margin-top: 5px;
+}
+
+.skills li {
+    margin-bottom: 5px;
+}
+
+.profile-description {
+    margin-top: 10px;
+}
+

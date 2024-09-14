@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #01245a;
+    color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+/* Heading Styles */
+.header h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Paragraph Styles */
+.header p {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+/* Image Styles */
+.header img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Spacing between text and image */
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.button {
+    background-color: #ffffff;
+    color: #01245a;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #01245a;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #516c96;
+    color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .header p {
+        font-size: 1.1rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
