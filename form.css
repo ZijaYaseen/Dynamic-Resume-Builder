@@ -121,28 +121,67 @@ textarea[name="experienceDescription"] {
     background-color: #ff0000;
 }
 
-
 /* Responsive styles */
 @media (max-width: 768px) {
     .resume-info {
-        padding: 10px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2.5rem; 
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; 
     }
 
     .resume-btn {
         font-size: 1rem;
-        padding: 8px 10px;
-        margin-bottom: 30px;
+        padding: 10px 15px;
     }
 }
 
-@media (max-width:480){
-    h1 {
-        font-size: 1.5rem;
+@media (max-width: 480px) {
+    body {
+        padding: 10px; 
     }
+
+    .resume-info {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem; 
+    }
+
+    h2 {
+        font-size: 1.2rem; 
+    }
+
+    .resume-btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .resume-info {
+        padding: 5px; 
+    }
+
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    h2 {
+        font-size: 1rem; 
+    }
+
+    .resume-btn {
+        font-size: 0.8rem;
+        padding: 6px 10px; 
+    }
+
 }
  /*    Generated resume styles*/
 
@@ -225,5 +264,76 @@ h2 {
 
 .profile-description {
     margin-top: 10px;
+}
+
+/* Responsive styles for generated resume */
+@media (max-width: 768px) {
+    .resume-box {
+        flex-direction: column; /* Stack sections vertically on tablets */
+        padding: 15px;
+    }
+
+    .left-section, .right-section {
+        flex: 1 1 100%; /* Full width for each section */
+        padding-right: 0;
+        padding-left: 0;
+        border-right: none;
+        border-bottom: 1px solid #ddd; /* Border between sections */
+    }
+
+    .left-section {
+        border-bottom: none; /* Remove bottom border from left section */
+    }
+
+    .profile-pic {
+        width: 120px; /* Adjusted for smaller screens */
+        height: 120px;
+    }
+
+    .contact p {
+        font-size: 0.9rem; /* Adjusted for better readability */
+    }
+
+    .title {
+        font-size: 1.2rem; /* Adjusted for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-box {
+        padding: 10px;
+    }
+
+    .profile-pic {
+        width: 100px; /* Further adjusted for very small screens */
+        height: 100px;
+    }
+
+    .contact p {
+        font-size: 0.8rem; /* Further adjusted for very small screens */
+    }
+
+    .title {
+        font-size: 1rem; /* Further adjusted for very small screens */
+    }
+}
+
+@media (max-width: 360px) {
+    .resume-box {
+        padding: 5px;
+    }
+
+    .profile-pic {
+        width: 80px; /* Further adjusted for very small screens */
+        height: 80px;
+    }
+
+    .contact p {
+        font-size: 0.7rem; /* Further adjusted for very small screens */
+    }
+
+    .title {
+        font-size: 0.9rem; /* Further adjusted for very small screens */
+    }
 }
 
