@@ -185,29 +185,37 @@ textarea[name="experienceDescription"] {
 }
  /*    Generated resume styles*/
 
+ /* Main resume box */
  .resume-box {
     display: flex;
     flex-direction: row;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 20px 0;
+    padding: 0; /* Add some padding around the box */
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%; /* Wider layout */
-    margin: 0 auto;
+    border-radius: 8px;
 }
 
+/* Left section styling */
 .left-section {
-    width: 35%; /* Left side is 30% */
-    padding-right: 10px;
-    border-right: 1px solid #ddd;
+    width: 35%;
     text-align: center;
+    background-color: #f0f4f8;
+    padding: 20px; /* Add padding for space between content and edges */
+    margin: 0;
+    border-radius: 8px 0 0 8px;
+    box-sizing: border-box;
 }
 
+/* Right section styling */
 .right-section {
-    width: 65%; /* Right side is 70% */
-    padding-left: 20px;
+    width: 65%;
+    padding: 20px;
+    background-color: #fff;
 }
 
+/* Profile Picture */
 .profile-pic {
     width: 150px;
     height: 150px;
@@ -217,44 +225,26 @@ textarea[name="experienceDescription"] {
     border: 2px solid rgb(48, 48, 53);
 }
 
+/* Contact section */
 .contact {
     margin-top: 20px;
     text-align: left;
 }
 
-.contact p{
-    font-size: 0.8rem;
-}
-
-h1 {
-    margin-top: 20px;
-    font-size: 40px;
+.contact p {
+    font-size: 0.9rem;
     margin-bottom: 5px;
 }
 
-.title {
-    font-size: 18px; /* Smaller font for title */
-    font-style: italic; /* Optional: Italic style for title */
-    color: #333; /* Title color */
-    margin-bottom: 20px; /* Space between title and profile section */
-    text-align: center;
-    justify-content: center;
-}
-
-h2 {
-    font-size: 20px;
-    margin-top: 20px;
-}
-
-/* Move skills to the left section */
+/* Skills */
 .skills {
     text-align: left;
     margin-top: 20px;
 }
 
 .skills ul {
-    list-style-type: disc; /* Use dots for bullet points */
-    padding-left: 20px; /* Indent the bullet points */
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px;
     margin-top: 5px;
 }
 
@@ -262,91 +252,125 @@ h2 {
     margin-bottom: 5px;
 }
 
-.profile-description {
-    margin-top: 10px;
+/* Heading and title styling */
+h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    color: #0d3c61;
+    font-weight: bold;
 }
 
-/* Responsive styles for generated resume */
+.title {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2, h3 {
+    font-size: 20px;
+    color: #0d3c61;
+    margin-top: 20px;
+}
+
+/* Profile Description */
+.profile-description {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .resume-box {
-        flex-direction: column; /* Stack sections vertically on tablets */
-        padding: 15px;
-    }
-
-    .left-section, .right-section {
-        flex: 1 1 100%; /* Full width for each section */
-        padding-right: 0;
-        padding-left: 0;
-        border-right: none;
-        border-bottom: 1px solid #ddd; /* Border between sections */
-    }
-
+    
     .left-section {
-        border-bottom: none; /* Remove bottom border from left section */
+        width: 35%;
+        padding: 10px;
+        border-radius: 8px; /* Make both sides rounded */
     }
 
+    .right-section {
+        width: 65%;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
     .profile-pic {
-        width: 120px; /* Adjusted for smaller screens */
+        width: 120px;
         height: 120px;
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: 29px;
     }
 
-    .contact p {
-        font-size: 0.9rem; /* Adjusted for better readability */
+    .contact h3, .skills h3 {
+        margin-bottom: 10px;
+        margin-top: 0;
+        font-size: 13px;
+    }
+    
+    .contact p, .skills li {
+        font-size: 0.5rem;
     }
 
+    .right-section h2 {
+        font-size: 15px;
+    }
+
+    .right-section li , .right-section p{
+       font-size: 10px;
+    }
+    
     .title {
-        font-size: 1.2rem; /* Adjusted for smaller screens */
+        font-size: 16px;
+        margin-bottom: 50px;
     }
 }
 
 @media (max-width: 480px) {
-    .resume-box {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .left-section, .right-section {
-        flex: 1 1 100%; /* Full width for each section */
-        padding-right: 0;
-        padding-left: 0;
-        border-right: none;
-        border-bottom: 1px solid #ddd; /* Border between sections */
-    }
-
     .left-section {
-        border-bottom: none; /* Remove bottom border from left section */
+        width: 35%;
+        padding: 10px;
+        border-radius: 8px; /* Make both sides rounded */
     }
 
+    .right-section {
+        width: 65%;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
     .profile-pic {
-        width: 100px; /* Further adjusted for very small screens */
-        height: 100px;
-    }
-
-    .contact p {
-        font-size: 0.8rem; /* Further adjusted for very small screens */
-    }
-
-    .title {
-        font-size: 1rem; /* Further adjusted for very small screens */
-    }
-}
-
-@media (max-width: 360px) {
-    .resume-box {
-        padding: 5px;
-    }
-
-    .profile-pic {
-        width: 80px; /* Further adjusted for very small screens */
+        width: 80px;
         height: 80px;
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: 28px;
     }
 
-    .contact p {
-        font-size: 0.7rem; /* Further adjusted for very small screens */
+    .contact h3, .skills h3 {
+        margin-bottom: 10px;
+        margin-top: 0;
+        font-size: 11px;
+    }
+    
+    .contact p, .skills li {
+        font-size: 0.4rem;
     }
 
+    .right-section h2 {
+        font-size: 14px;
+    }
+
+    .right-section li , .right-section p{
+       font-size: 10px;
+    }
+    
     .title {
-        font-size: 0.9rem; /* Further adjusted for very small screens */
+        font-size: 14px;
+        margin-bottom: 50px;
     }
 }
-

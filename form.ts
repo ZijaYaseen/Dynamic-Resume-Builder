@@ -103,38 +103,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Generate the resume layout
         const resumeContent = `
-            <div class="resume-box">
-                <div class="left-section">
-                    ${profilePictureUrl ? `<img src="${profilePictureUrl}" alt="Profile Picture" class="profile-pic">` : ''}
-                    <div class="contact">
-                        <h4>CONTACT DETAILS:</h4>
-                        <p>Email: <a href="mailto:${email}">${email}</a></p>
-                        <p>Phone: <a href="tel:${phone}">${phone}</a></p>
-                    </div>
-                    <div class="skills">
-                        <h2>SKILLS:</h2>
-                        <ul>${skills.map(skill => `<li>${skill}</li>`).join('')}</ul>
-                    </div>
+        <div class="resume-box">
+            <div class="left-section">
+                ${profilePictureUrl ? `<img src="${profilePictureUrl}" alt="Profile Picture" class="profile-pic">` : ''}
+                <div class="contact">
+                    <h3>CONTACT DETAILS:</h3>
+                    <p>Email: <a href="mailto:${email}">${email}</a></p>
+                    <p>Phone: <a href="tel:${phone}">${phone}</a></p>
                 </div>
-                <div class="right-section">
-                    <h1>${name.toUpperCase()}</h1>
-                    <p class="title">${title}</p>
-                    <div class="profile-description">
-                        <h2>PROFILE:</h2>
-                        <p>${profileDescription}</p>
-                    </div>
-                  <div class="education">
-                  <h2>EDUCATION:</h2>
-                  ${education.map(edu => `<p>${edu}</p>`).join('')}\n
-                  </div>
-                  <div class="experience">
-                   <h2>EXPERIENCE:</h2>
-                     ${experiences.map(exp => `<p>${exp}</p>`).join('')}\n
-                       </div>
+                <div class="skills">
+                    <h3>SKILLS:</h3>
+                    <ul>${skills.map(skill => `<li>${skill}</li>`).join('')}</ul>
                 </div>
             </div>
-        `;
-
+            <div class="right-section">
+                <h1>${name.toUpperCase()}</h1>
+                <p class="title">${title}</p>
+                <div class="profile-description">
+                    <h2>PROFILE:</h2>
+                    <p>${profileDescription}</p>
+                </div>
+                <div class="education">
+                    <h2>EDUCATION:</h2>
+                     <ul>${education.map(edu => `  <li> ${edu}</li>`).join('\n')}</ul>
+                </div>
+                <div class="experience">
+                    <h2>EXPERIENCE:</h2>
+                    <ul> ${experiences.map(exp => ` <li>${exp}</li>`).join('\n')}</ul>
+                </div>
+            </div>
+        </div>
+    `;
+    
         // Display the generated resume in a styled container
         resumeSection.innerHTML = resumeContent;
         resumeSection.style.display = 'block';
