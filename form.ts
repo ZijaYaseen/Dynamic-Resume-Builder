@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h1>${name.toUpperCase()}</h1>
                 <p class="title">${title}</p>
                 <div class="profile-description">
-                    <h2>PROFILE:</h2>
+                    <h2 class="profile">PROFILE:</h2>
                     <p>${profileDescription}</p>
                 </div>
                 <div class="education">
