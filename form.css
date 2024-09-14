@@ -301,7 +301,20 @@ h2 {
 
 @media (max-width: 480px) {
     .resume-box {
+        flex-direction: column;
         padding: 10px;
+    }
+
+    .left-section, .right-section {
+        flex: 1 1 100%; /* Full width for each section */
+        padding-right: 0;
+        padding-left: 0;
+        border-right: none;
+        border-bottom: 1px solid #ddd; /* Border between sections */
+    }
+
+    .left-section {
+        border-bottom: none; /* Remove bottom border from left section */
     }
 
     .profile-pic {
