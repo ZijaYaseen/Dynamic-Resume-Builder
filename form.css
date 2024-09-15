@@ -6,14 +6,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff; /* White background */
-    color: #000000; /* Black text */
+    background-color: #ffffff;
+    color: #000000;
     line-height: 1.6;
     padding: 20px;
     margin: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Aligned to the top */
+    align-items: flex-start; 
     min-height: 100vh;
 }
 
@@ -22,23 +22,23 @@ body {
     max-width: 800px;
     width: 100%;
     padding: 20px;
-    background-color: #f7f7f7; /* Light gray background for form */
+    background-color: #f7f7f7; 
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     text-align: left;
 }
 
 /* Headings */
 h1 {
-    color: #01245a; /* Dark blue headings */
+    color: #01245a; 
     text-align: center;
-    font-size: 3rem; /* Larger heading */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    font-size: 3rem; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
     font-family: 'Times New Roman', Times, serif;
 }
 
 h2 {
-    color: #01245a; /* Dark blue headings */
+    color: #01245a; 
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -59,7 +59,7 @@ form input {
     font-size: 1rem;
 }
 
-/* Center the "Generate Resume" button */
+/*Resume button in center*/
 .resume-btn {
     background-color: #01245a;
     color: #ffffff;
@@ -71,7 +71,7 @@ form input {
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: block;
-    width: 100%; /* Full-width button */
+    width: 100%;
     text-align: center;
 }
 
@@ -79,13 +79,12 @@ form input {
     background-color: #516c96;
 }
 
-/* Center the button container */
 .button-container {
     text-align: center;
     margin-top: 30px;
 }
 
-/* Container for dynamic sections */
+
 #educationContainer, #skillsContainer, #experienceContainer {
     margin-top: 10px;
 }
@@ -98,7 +97,7 @@ form input {
 /* Increase description box size */
 textarea[name="profileDescription"],
 textarea[name="experienceDescription"] {
-    height: 100px; /* Increase the height */
+    height: 100px;
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -183,13 +182,12 @@ textarea[name="experienceDescription"] {
     }
 
 }
- /*    Generated resume styles*/
 
- /* Main resume box */
+ /* user Main resume box */
  .resume-box {
     display: flex;
     flex-direction: row;
-    padding: 0; /* Add some padding around the box */
+    padding: 0;
     margin: 0;
     width: 100%;
     background-color: #fff;
@@ -202,7 +200,7 @@ textarea[name="experienceDescription"] {
     width: 35%;
     text-align: center;
     background-color: #f0f4f8;
-    padding: 20px; /* Add padding for space between content and edges */
+    padding: 20px;
     margin: 0;
     border-radius: 8px 0 0 8px;
     box-sizing: border-box;
@@ -243,7 +241,7 @@ textarea[name="experienceDescription"] {
 }
 
 .skills ul {
-    list-style-type: disc; /* Bullet points */
+    list-style-type: disc; /* Bullet points .... styling dot */
     padding-left: 20px;
     margin-top: 5px;
 }
@@ -285,7 +283,7 @@ h2, h3 {
     .left-section {
         width: 35%;
         padding: 10px;
-        border-radius: 8px; /* Make both sides rounded */
+        border-radius: 8px;
     }
 
     .right-section {
@@ -332,7 +330,7 @@ h2, h3 {
     .left-section {
         width: 35%;
         padding: 10px;
-        border-radius: 8px; /* Make both sides rounded */
+        border-radius: 8px; 
     }
 
     .right-section {

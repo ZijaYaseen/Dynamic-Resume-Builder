@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hide the form when resume is generated
         form.style.display = 'none';
 
-        // Extract form data
+        // show form data
         const formData = new FormData(form);
         const profilePictureFile = formData.get('profilePicture') as File;
         const name = formData.get('name') as string;
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const phone = formData.get('phone') as string;
         const profileDescription = formData.get('profileDescription') as string;
 
-        // Extract education data
+        // show education data
         const educationDivs = document.querySelectorAll('#educationContainer > div') as NodeListOf<HTMLDivElement>;
         const education = Array.from(educationDivs).map(div => {
             const educationTitle = (div.querySelector('input[name="educationTitle"]') as HTMLInputElement).value;
@@ -81,11 +81,11 @@ document.addEventListener('DOMContentLoaded', () => {
             return `${educationTitle} in ${educationField}, ${institution} -- ${year}.`;
         });
 
-        // Extract skills data
+        //  skills data
         const skillInputs = document.querySelectorAll('#skillsContainer input') as NodeListOf<HTMLInputElement>;
         const skills = Array.from(skillInputs).map(input => input.value);
 
-        // Extract experience data
+        //  experience data
         const experienceDivs = document.querySelectorAll('#experienceContainer > div') as NodeListOf<HTMLDivElement>;
         const experiences = Array.from(experienceDivs).map(div => {
             const experienceTitle = (div.querySelector('input[name="experienceTitle"]') as HTMLInputElement).value;
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
             profilePictureUrl = URL.createObjectURL(profilePictureFile);
         }
 
-        // Generate the resume layout
+        // resume layout
         const resumeContent = `
         <div class="resume-box">
             <div class="left-section">
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     `;
     
-        // Display the generated resume in a styled container
+        // show the generated resume in styled container.... with css 
         resumeSection.innerHTML = resumeContent;
         resumeSection.style.display = 'block';
     }

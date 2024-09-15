@@ -1,11 +1,10 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #01245a;
@@ -53,7 +52,7 @@ body {
 .header img {
     max-width: 100%;
     height: auto;
-    margin-top: 20px; /* Spacing between text and image */
+    margin-top: 20px; 
     margin-bottom: 20px;
 }
 
