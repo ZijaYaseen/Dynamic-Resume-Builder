@@ -92,7 +92,8 @@ form input {
 .toggle-button {
     margin: 0;
     margin-bottom: 10px;
-}
+    }
+
 
 /* Increase description box size */
 textarea[name="profileDescription"],
@@ -110,10 +111,12 @@ textarea[name="experienceDescription"] {
 .remove-btn {
     background-color: #ff4c4c;
     color: white;
+    font-size:x-small;
     border: none;
-    padding: 5px 10px;
+    padding: 3px 3px;
     cursor: pointer;
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .remove-btn:hover {
